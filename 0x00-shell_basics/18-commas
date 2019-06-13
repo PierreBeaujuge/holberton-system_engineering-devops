@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amF | sort -n
+ls -amF | sort -n | grep
