@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -amF | grep
+ls -amF
