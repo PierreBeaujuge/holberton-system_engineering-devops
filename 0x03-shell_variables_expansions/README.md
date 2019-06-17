@@ -1,0 +1,1 @@
+Learn and practice Shell, init files, variables and expansions
