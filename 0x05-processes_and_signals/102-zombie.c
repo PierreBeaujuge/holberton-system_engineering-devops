@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+int infinite_while(void);
+
 /**
  * main - function that creates 5 zombie processes
  * Return: always 0
@@ -24,6 +26,10 @@ int main(void)
 			exit(0);
 	}
 	infinite_while();
+	while (1)
+	{
+		sleep(1);
+	}
 	return (0);
 }
 
