@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# install a new Nginx web server, and configure it to have to have a custom 404 page that contains the string Ceci n'est pas une page
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
+cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/another_save_default
+sed -i '46i\\terror_page 404 /404.html;' /etc/nginx/sites-enabled/default
+/etc/init.d/nginx start
