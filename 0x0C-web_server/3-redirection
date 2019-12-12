@@ -3,6 +3,8 @@
 apt-get update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
-cp /etc/nginx/sites-enabled/default /etc/nginx/sites-enabled/save_default
-sed -i '46i\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-enabled/default
-/etc/init.d/nginx start
+mv /var/www/html/index.nginx-debian.html /var/www/html/save_index.nginx-debian.html
+echo "Holberton School for the win!" > /var/www/html/index.nginx-debian.html
+cp /etc/nginx/sites-available/default /etc/nginx/sites-available/save_default
+sed -i "/server_name _;/a rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;" /etc/nginx/sites-available/default
+service nginx start
