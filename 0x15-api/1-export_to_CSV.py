@@ -25,6 +25,6 @@ if __name__ == "__main__":
                              TASKS_TITLES[N])
                       for N in range(TOTAL_NUMBER_OF_TASKS)]
 
-        with open('USER_ID.csv', 'w') as test_file:
+        with open('{}.csv'.format(USER_ID), 'w') as test_file:
             for TASK_LIST in TASKS_LIST:
                 test_file.write(TASK_LIST)

@@ -27,5 +27,5 @@ if __name__ == "__main__":
                         "username": "{}".format(USERNAME)}
                        for N in range(TOTAL_NUMBER_OF_TASKS)]}
 
-        with open('USER_ID.json', 'w') as fp:
+        with open('{}.json'.format(USER_ID), 'w') as fp:
             json.dump(TASKS_DICT, fp)
