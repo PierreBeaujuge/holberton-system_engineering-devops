@@ -19,8 +19,8 @@ def number_of_subscribers(subreddit):
     try:
         url = 'https://www.reddit.com/r/'
         response = requests.get(url + subreddit + "/about.json",
-                                headers=headers)
+                                headers=headers, allow_redirects=False)
         return response.json()['data']['subscribers']
-        # pprint.pprint(SUBREDDIT.json()['data']['subscribers'])
+        # pprint.pprint(response.json()['data']['subscribers'])
     except:
         return 0
