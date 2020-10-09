@@ -149,13 +149,13 @@ Ceci n'est pas une page
 
 ---
 
-### [5. Design a beautiful 404 page](./5-design_a_beautiful_404_page)
+### 5. Design a beautiful 404 page
 
 - Submit the URL of your 404 page in the field bellow.
 
 ---
 
-### [6. Install Nginx web server (w/ Puppet)](./7-puppet_install_nginx_web_server.pp)
+### 6. Install Nginx web server (w/ Puppet)
 
 - Time to practice configuring your server with Puppet! Just as you did before, we’d like you to install and configure an Nginx server using Puppet instead of Bash. To save time and effort, you should also include resources in your manifest to perform a 301 redirect when querying /redirect_me.
   - Nginx should be listening on port 80
