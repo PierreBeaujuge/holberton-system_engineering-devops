@@ -33,7 +33,6 @@ This repository contains programs written in Bash for the System Engineering and
 | [0x16. Api Advanced](./0x16-api_advanced)| Interacing with Reddit's API to scrape data |
 | [0x17. Web Stack Debugging #3](./0x17-web_stack_debugging_3)| Debugging with strace |
 | [0x18. Webstack Monitoring](./0x18-webstack_monitoring)| Monitoring system metrics with Datadog |
-| [0x19. Postmortem](./0x19-postmortem)| How to write a Postmortem |
 | [0x1A. Application Server](./0x1A-application_server) | Serving Flask apps with Gunicorn and NGINX |
 | [0x1B. Web Stack Debugging #4](./0x1B-web_stack_debugging_4) | Benchmarking with ApacheBench |
 
